@@ -85,9 +85,11 @@ namespace kaanh
 		}
 
 
+#ifdef UNIX
 		dynamic_cast<aris::control::EthercatController*>(controller.get())->scanInfoForCurrentSlaves();
 
 		dynamic_cast<aris::control::EthercatController*>(controller.get())->scanPdoForCurrentSlaves();
+#endif
 
 		std::cout << controller->xmlString() << std::endl;
 
@@ -245,7 +247,7 @@ namespace kaanh
 			"</Command>");
 	}
 
-/*
+
 	struct MoveJRParam
 	{
 		double begin_pos, target_pos, vel, acc, dec;
@@ -434,8 +436,9 @@ namespace kaanh
 			"	</GroupParam>"
 			"</Command>");
 	}
-*/
 
+
+/*
     struct MoveJRParam
     {
         std::vector<double> begin_pos;
@@ -640,7 +643,7 @@ namespace kaanh
             "</Command>");
     }
 
-
+	*/
     struct MoveSineParam
     {
         double begin_pos, target_pos, vel, acc, dec, amp, cycle, phi0, offset;
