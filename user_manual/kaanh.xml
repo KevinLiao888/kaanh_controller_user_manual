@@ -138,6 +138,74 @@
             <Id name="id_135" value="id_135"/>
             <Id name="id_136" value="id_136"/>
             <Id name="id_137" value="id_137"/>
+			<Id name="id_138" value="id_138"/>
+			<Id name="id_139" value="id_139"/>
+			<Id name="id_140" value="id_140"/>
+			<Id name="id_141" value="id_141"/>
+			<Id name="id_142" value="id_142"/>
+			<Id name="id_143" value="id_143"/>
+			<Id name="id_144" value="id_144"/>
+			<Id name="id_145" value="id_145"/>
+			<Id name="id_146" value="id_146"/>
+			<Id name="id_147" value="id_147"/>
+			<Id name="id_148" value="id_148"/>
+			<Id name="id_149" value="id_149"/>
+			<Id name="id_150" value="id_150"/>
+			<Id name="id_151" value="id_151"/>
+			<Id name="id_152" value="id_152"/>
+			<Id name="id_153" value="id_153"/>
+			<Id name="id_154" value="id_154"/>
+			<Id name="id_155" value="id_155"/>
+			<Id name="id_156" value="id_156"/>
+			<Id name="id_157" value="id_157"/>
+			<Id name="id_158" value="id_158"/>
+			<Id name="id_159" value="id_159"/>
+			<Id name="id_160" value="id_160"/>
+			<Id name="id_161" value="id_161"/>
+			<Id name="id_162" value="id_162"/>
+			<Id name="id_163" value="id_163"/>
+			<Id name="id_164" value="id_164"/>
+			<Id name="id_165" value="id_165"/>
+			<Id name="id_166" value="id_166"/>
+			<Id name="id_167" value="id_167"/>
+			<Id name="id_168" value="id_168"/>
+			<Id name="id_169" value="id_169"/>
+			<Id name="id_170" value="id_170"/>
+			<Id name="id_171" value="id_171"/>
+			<Id name="id_172" value="id_172"/>
+			<Id name="id_173" value="id_173"/>
+			<Id name="id_174" value="id_174"/>
+			<Id name="id_175" value="id_175"/>
+			<Id name="id_176" value="id_176"/>
+			<Id name="id_177" value="id_177"/>
+			<Id name="id_178" value="id_178"/>
+			<Id name="id_179" value="id_179"/>
+			<Id name="id_180" value="id_180"/>
+			<Id name="id_181" value="id_181"/>
+			<Id name="id_182" value="id_182"/>
+			<Id name="id_183" value="id_183"/>
+			<Id name="id_184" value="id_184"/>
+			<Id name="id_185" value="id_185"/>
+			<Id name="id_186" value="id_186"/>
+			<Id name="id_187" value="id_187"/>
+			<Id name="id_188" value="id_188"/>
+			<Id name="id_189" value="id_189"/>
+			<Id name="id_190" value="id_190"/>
+			<Id name="id_191" value="id_191"/>
+			<Id name="id_192" value="id_192"/>
+			<Id name="id_193" value="id_193"/>
+			<Id name="id_194" value="id_194"/>
+			<Id name="id_195" value="id_195"/>
+			<Id name="id_196" value="id_196"/>
+			<Id name="id_197" value="id_197"/>
+			<Id name="id_198" value="id_198"/>
+			<Id name="id_199" value="id_199"/>
+			<Id name="id_200" value="id_200"/>
+			<Id name="id_201" value="id_201"/>
+			<Id name="id_202" value="id_202"/>
+			<Id name="id_203" value="id_203"/>
+			<Id name="id_204" value="id_204"/>
+			<Id name="id_205" value="id_205"/>
             <Id name="id_1001" value="id_1001"/>
             <Id name="id_1002" value="id_1002"/>
             <Id name="id_1003" value="id_1003"/>
@@ -441,249 +509,27 @@
                                     </Table>
                                     <Button id="id_77" text="Set DH" style="width:200px" cmd="setDH --seven_axes --d1_seven_axes=${id_71} --d3_seven_axes=${id_104} --d5_seven_axes=${id_105} --tool0_seven_axes=${id_72}" return_attached=""/>
                                 </AccordionItem>
-                                <AccordionItem text="part_ground" id="id_75">
-                                    <Table id="id_1035">
+                                <AccordionItem text="part_ground" id="id_118">
+                                    <Table id="id_119">
                                         <tr>
                                             <td>
-                                                <B id="id_115" text="part_id" style="width:30px"/>
+                                                <B id="id_120" text="part_id" style="width:30px"/>
                                             </td>
                                             <td>
-                                                <Input id="id_133" default="0" style="width:350px"/>
+                                                <Input id="id_121" default="0" style="width:350px"/>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <B id="id_112" text="Name" style="width:30px"/>
+                                                <B id="id_122" text="Name" style="width:30px"/>
                                             </td>
                                             <td>
-                                                <Input id="id_134" default="ground" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_113" text="Pe" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_135" default="{0, 0, 0, -0, 0, -0}" style="width:350px"/>
+                                                <Input id="id_123" default="ground" style="width:350px"/>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <B id="id_114" text="Path" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_136" default="/RobotGallery/Rokae/XB4/l0.data" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                    </Table>
-                                    <Button id="id_137" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_134} --pe=${id_135} --part_id=${id_133} --file_path=${id_136}" return_attached=""/>
-                                </AccordionItem>
-                                <AccordionItem text="part1" id="id_75">
-                                    <Table id="id_1035">
-                                        <tr>
-                                            <td>
-                                                <B id="id_115" text="part_id" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_94" default="1" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_112" text="Name" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_90" default="test" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_113" text="Pe" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_91" default="{0, 0, 0, -0, 0, -0}" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_114" text="Path" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_92" default="/RobotGallery/Rokae/XB4/l1.data" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                    </Table>
-                                    <Button id="id_93" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_90} --pe=${id_91} --part_id=${id_94} --file_path=${id_92}" return_attached=""/>
-                                </AccordionItem>
-                                <AccordionItem text="part2" id="id_78">
-                                    <Table id="id_1035">
-                                        <tr>
-                                            <td>
-                                                <B id="id_115" text="part_id" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_79" default="2" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_112" text="Name" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_80" default="test" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_113" text="Pe" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_81" default="{0, 0, 0, -0, 0, -0}" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_114" text="Path" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_82" default="/RobotGallery/Rokae/XB4/l2.data" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                    </Table>
-                                    <Button id="id_88" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_80} --pe=${id_81} --part_id=${id_79} --file_path=${id_82}" return_attached=""/>
-                                </AccordionItem>
-                                <AccordionItem text="part3" id="id_75">
-                                    <Table id="id_1035">
-                                        <tr>
-                                            <td>
-                                                <B id="id_115" text="part_id" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_89" default="3" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_112" text="Name" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_95" default="test" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_113" text="Pe" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_96" default="{0, 0, 0, -0, 0, -0}" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_114" text="Path" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_97" default="/RobotGallery/Rokae/XB4/l3.data" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                    </Table>
-                                    <Button id="id_98" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_95} --pe=${id_96} --part_id=${id_89} --file_path=${id_97}" return_attached=""/>
-                                </AccordionItem>
-                                <AccordionItem text="part4" id="id_75">
-                                    <Table id="id_1035">
-                                        <tr>
-                                            <td>
-                                                <B id="id_115" text="part_id" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_106" default="4" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_112" text="Name" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_107" default="test" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_113" text="Pe" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_108" default="{0, 0, 0, -0, 0, -0}" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_114" text="Path" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_116" default="/RobotGallery/Rokae/XB4/l4.data" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                    </Table>
-                                    <Button id="id_117" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_107} --pe=${id_108} --part_id=${id_106} --file_path=${id_116}" return_attached=""/>
-                                </AccordionItem>
-                                <AccordionItem text="part5" id="id_75">
-                                    <Table id="id_1035">
-                                        <tr>
-                                            <td>
-                                                <B id="id_115" text="part_id" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_118" default="5" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_112" text="Name" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_119" default="test" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_113" text="Pe" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_120" default="{0, 0, 0, -0, 0, -0}" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_114" text="Path" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_121" default="/RobotGallery/Rokae/XB4/l5.data" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                    </Table>
-                                    <Button id="id_122" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_119} --pe=${id_120} --part_id=${id_118} --file_path=${id_121}" return_attached=""/>
-                                </AccordionItem>
-                                <AccordionItem text="part6" id="id_75">
-                                    <Table id="id_1035">
-                                        <tr>
-                                            <td>
-                                                <B id="id_115" text="part_id" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_123" default="6" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_112" text="Name" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_124" default="test" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_113" text="Pe" style="width:30px"/>
+                                                <B id="id_124" text="Pe" style="width:30px"/>
                                             </td>
                                             <td>
                                                 <Input id="id_125" default="{0, 0, 0, -0, 0, -0}" style="width:350px"/>
@@ -691,51 +537,273 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <B id="id_114" text="Path" style="width:30px"/>
+                                                <B id="id_126" text="Path" style="width:30px"/>
                                             </td>
                                             <td>
-                                                <Input id="id_126" default="/RobotGallery/Rokae/XB4/l6.data" style="width:350px"/>
+                                                <Input id="id_127" default="/RobotGallery/Rokae/XB4/l0.data" style="width:350px"/>
                                             </td>
                                         </tr>
                                     </Table>
-                                    <Button id="id_127" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_124} --pe=${id_125} --part_id=${id_123} --file_path=${id_126}" return_attached=""/>
+                                    <Button id="id_128" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_123} --pe=${id_125} --part_id=${id_121} --file_path=${id_127}" return_attached=""/>
                                 </AccordionItem>
-                                <AccordionItem text="part7" id="id_75">
-                                    <Table id="id_1035">
+                                <AccordionItem text="part1" id="id_129">
+                                    <Table id="id_130">
                                         <tr>
                                             <td>
-                                                <B id="id_115" text="part_id" style="width:30px"/>
+                                                <B id="id_131" text="part_id" style="width:30px"/>
                                             </td>
                                             <td>
-                                                <Input id="id_128" default="7" style="width:350px"/>
+                                                <Input id="id_132" default="1" style="width:350px"/>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <B id="id_112" text="Name" style="width:30px"/>
+                                                <B id="id_133" text="Name" style="width:30px"/>
                                             </td>
                                             <td>
-                                                <Input id="id_129" default="test" style="width:350px"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <B id="id_113" text="Pe" style="width:30px"/>
-                                            </td>
-                                            <td>
-                                                <Input id="id_130" default="{0, 0, 0, -0, 0, -0}" style="width:350px"/>
+                                                <Input id="id_134" default="test" style="width:350px"/>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <B id="id_114" text="Path" style="width:30px"/>
+                                                <B id="id_135" text="Pe" style="width:30px"/>
                                             </td>
                                             <td>
-                                                <Input id="id_131" default="/RobotGallery/Rokae/XB4/l7.data" style="width:350px"/>
+                                                <Input id="id_136" default="{0, 0, 0, -0, 0, -0}" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_137" text="Path" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_138" default="/RobotGallery/Rokae/XB4/l1.data" style="width:350px"/>
                                             </td>
                                         </tr>
                                     </Table>
-                                    <Button id="id_132" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_129} --pe=${id_130} --part_id=${id_128} --file_path=${id_131}" return_attached=""/>
+                                    <Button id="id_139" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_134} --pe=${id_136} --part_id=${id_132} --file_path=${id_138}" return_attached=""/>
+                                </AccordionItem>
+                                <AccordionItem text="part2" id="id_140">
+                                    <Table id="id_141">
+                                        <tr>
+                                            <td>
+                                                <B id="id_142" text="part_id" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_143" default="2" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_144" text="Name" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_145" default="test" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_146" text="Pe" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_147" default="{0, 0, 0, -0, 0, -0}" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_148" text="Path" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_149" default="/RobotGallery/Rokae/XB4/l2.data" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                    </Table>
+                                    <Button id="id_150" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_145} --pe=${id_147} --part_id=${id_143} --file_path=${id_149}" return_attached=""/>
+                                </AccordionItem>
+                                <AccordionItem text="part3" id="id_151">
+                                    <Table id="id_152">
+                                        <tr>
+                                            <td>
+                                                <B id="id_153" text="part_id" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_154" default="3" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_155" text="Name" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_156" default="test" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_157" text="Pe" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_158" default="{0, 0, 0, -0, 0, -0}" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_159" text="Path" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_160" default="/RobotGallery/Rokae/XB4/l3.data" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                    </Table>
+                                    <Button id="id_161" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_156} --pe=${id_158} --part_id=${id_154} --file_path=${id_160}" return_attached=""/>
+                                </AccordionItem>
+                                <AccordionItem text="part4" id="id_162">
+                                    <Table id="id_163">
+                                        <tr>
+                                            <td>
+                                                <B id="id_164" text="part_id" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_165" default="4" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_166" text="Name" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_167" default="test" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_168" text="Pe" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_169" default="{0, 0, 0, -0, 0, -0}" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_170" text="Path" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_171" default="/RobotGallery/Rokae/XB4/l4.data" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                    </Table>
+                                    <Button id="id_172" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_167} --pe=${id_169} --part_id=${id_165} --file_path=${id_171}" return_attached=""/>
+                                </AccordionItem>
+                                <AccordionItem text="part5" id="id_173">
+                                    <Table id="id_174">
+                                        <tr>
+                                            <td>
+                                                <B id="id_175" text="part_id" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_176" default="5" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_177" text="Name" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_178" default="test" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_179" text="Pe" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_180" default="{0, 0, 0, -0, 0, -0}" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_181" text="Path" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_182" default="/RobotGallery/Rokae/XB4/l5.data" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                    </Table>
+                                    <Button id="id_183" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_178} --pe=${id_180} --part_id=${id_176} --file_path=${id_182}" return_attached=""/>
+                                </AccordionItem>
+                                <AccordionItem text="part6" id="id_184">
+                                    <Table id="id_185">
+                                        <tr>
+                                            <td>
+                                                <B id="id_186" text="part_id" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_187" default="6" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_188" text="Name" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_189" default="test" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_190" text="Pe" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_191" default="{0, 0, 0, -0, 0, -0}" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_192" text="Path" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_193" default="/RobotGallery/Rokae/XB4/l6.data" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                    </Table>
+                                    <Button id="id_194" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_189} --pe=${id_191} --part_id=${id_187} --file_path=${id_193}" return_attached=""/>
+                                </AccordionItem>
+                                <AccordionItem text="part7" id="id_195">
+                                    <Table id="id_196">
+                                        <tr>
+                                            <td>
+                                                <B id="id_197" text="part_id" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_198" default="7" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_199" text="Name" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_200" default="test" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_201" text="Pe" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_202" default="{0, 0, 0, -0, 0, -0}" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <B id="id_203" text="Path" style="width:30px"/>
+                                            </td>
+                                            <td>
+                                                <Input id="id_204" default="/RobotGallery/Rokae/XB4/l7.data" style="width:350px"/>
+                                            </td>
+                                        </tr>
+                                    </Table>
+                                    <Button id="id_205" text="Set Part Geometry" style="width:250px" cmd="setPG --name=${id_200} --pe=${id_202} --part_id=${id_198} --file_path=${id_204}" return_attached=""/>
                                 </AccordionItem>
                             </Accordion>
                             <Br/>
