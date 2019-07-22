@@ -159,7 +159,7 @@ namespace kaanh
 		//设置末端位置
 		ee.setMpq(end);
 		//得到运动学逆解并设置电机位置
-		if (!target.model->solverPool().at(0).kinPos())return -1;
+		if (target.model->solverPool().at(0).kinPos())return -1;
 		return time - target.count;
 	}
 

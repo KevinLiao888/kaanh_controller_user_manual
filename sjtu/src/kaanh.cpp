@@ -758,7 +758,7 @@ namespace kaanh
             }
         }
         //3D模型同步
-        if (!target.model->solverPool().at(1).kinPos())return -1;
+        if (target.model->solverPool().at(1).kinPos())return -1;
 
         // 打印 //
         auto &cout = controller->mout();
