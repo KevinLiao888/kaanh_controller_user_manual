@@ -332,7 +332,7 @@ namespace kaanh
 
 		ee.setMpq(pq2);//让目标：末端，执行到pq2的位姿
 
-		if (!target.model->solverPool().at(0).kinPos())return -1;
+		if (target.model->solverPool().at(0).kinPos())return -1;
 		target.model->solverPool().at(0).kinVel();
 
 		// 访问主站 //
@@ -498,7 +498,7 @@ namespace kaanh
 		pq2[2] = begin_pq[2] + (a1 + a2 - 1)*OA[2] + a2 * AE[2];
 		ee.setMpq(pq2);//让目标：末端，执行到pq2的位姿
 
-		if (!target.model->solverPool().at(0).kinPos())return -1;
+		if (target.model->solverPool().at(0).kinPos())return -1;
 		target.model->solverPool().at(0).kinVel();
 
 		// 访问主站 //
@@ -641,7 +641,7 @@ namespace kaanh
 		pq2[2] = begin_pq[2] + (a1 + a2 - 1)*OA[2] + a2 * (AE[2]);
 		ee.setMpq(pq2);//让目标：末端，执行到pq2的位姿
 
-		if (!target.model->solverPool().at(0).kinPos())return -1;
+		if (target.model->solverPool().at(0).kinPos())return -1;
 		target.model->solverPool().at(0).kinVel();
 
 		// 访问主站 //
@@ -768,7 +768,7 @@ namespace kaanh
 
 		ee.setMpq(pq2);//让目标：末端，执行到pq2的位姿
 
-		if (!target.model->solverPool().at(0).kinPos())return -1;
+		if (target.model->solverPool().at(0).kinPos())return -1;
 
 		// 访问主站 //
 		auto controller = target.controller;
@@ -896,7 +896,7 @@ namespace kaanh
 		ee.setMpq(pq2);
 
 		//controller与模型同步，保证3D仿真模型同步显示
-		if (!target.model->solverPool().at(0).kinPos())return -1;// at(0)反解， at(1)正解
+		if (target.model->solverPool().at(0).kinPos())return -1;// at(0)反解， at(1)正解
 
 
 		return total_count - target.count;
@@ -1154,7 +1154,7 @@ namespace kaanh
 
 
 
-		if (!target.model->solverPool().at(1).kinPos())return -1;
+		if (target.model->solverPool().at(1).kinPos())return -1;
 
 		// 访问主站 //
 		auto controller = target.controller;
@@ -1322,7 +1322,7 @@ namespace kaanh
 		}
 
 		//controller与模型同步，保证3D仿真模型同步显示
-		if (!target.model->solverPool().at(1).kinPos())return -1;
+		if (target.model->solverPool().at(1).kinPos())return -1;
 
 		// 打印电流 //
 		auto &cout = controller->mout();
@@ -1661,7 +1661,7 @@ namespace kaanh
 			}
 		}
 
-		if (!target.model->solverPool().at(1).kinPos())return -1;
+		if (target.model->solverPool().at(1).kinPos())return -1;
 
 		// 打印电流 //
 		auto &cout = controller->mout();
@@ -1861,7 +1861,7 @@ namespace kaanh
 		if (target.count == 1)
 		{
 			target.model->generalMotionPool().at(0).setMpq(param.pq.data());	//generalMotionPool()指模型末端，at(0)表示第1个末端，对于6足就有6个末端，对于机器人只有1个末端
-			if (!target.model->solverPool().at(0).kinPos())return -1;
+			if (target.model->solverPool().at(0).kinPos())return -1;
 			for (Size i = 0; i < param.axis_pos_vec.size(); ++i)
 			{
 				param.axis_begin_pos_vec[i] = controller->motionPool().at(i).targetPos();
@@ -1879,7 +1879,7 @@ namespace kaanh
 			controller->motionAtAbs(i).setOffsetVel(v * 1000);
 			target.model->motionPool().at(i).setMp(p);
 		}
-		if (!target.model->solverPool().at(1).kinPos())return -1;
+		if (target.model->solverPool().at(1).kinPos())return -1;
 
 		// 打印电流 //
 		auto &cout = controller->mout();

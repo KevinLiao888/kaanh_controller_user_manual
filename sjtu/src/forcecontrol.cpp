@@ -224,7 +224,7 @@ namespace forcecontrol
 			}
 		}
 		
-		if (!target.model->solverPool().at(1).kinPos())return -1;
+		if (target.model->solverPool().at(1).kinPos())return -1;
 		target.model->generalMotionPool().at(0).getMpq(pqa);
 
 		// 打印电流 //

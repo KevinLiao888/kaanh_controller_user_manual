@@ -161,7 +161,7 @@ namespace kaanh
 			target.model->motionPool().at(i).setMp(end[i]);
 		}
 		//得到运动学正解并设置末端位置
-		if (!target.model->solverPool().at(1).kinPos())return -1;
+		if (target.model->solverPool().at(1).kinPos())return -1;
 		return time - target.count;
 	}
 
